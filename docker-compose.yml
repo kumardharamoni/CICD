@@ -1,9 +1,9 @@
 version: '2'
 services:
-web:
-  build:
-    context: .
-  image: test123
-  ports:
-   - "90:80"
-  container_name: web-tester123
+  web:
+    build:
+      context: .
+    image: myrepo/httpd
+    ports:
+     - "8090:80"
+    container_name: httpapp
